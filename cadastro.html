@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Cadastro de Notícias</title>
+  <!-- link para o arquivo CSS do Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="icon" href="ico.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="ico.ico" type="image/x-icon">
+  <script src="../Noticiario/giragira.js"></script>
+</head>
+<body class="bg-warning p-1 border border-dark border-4">
+  <div class="container">
+    <h2 class="text-decoration-underline text-center mt-4"> Seminário Interdisciplinar: Implementação de uma Aplicação WEB</h2>
+    <div class="container">
+      <br>
+      <div class="border p-2 border-dark border-5">
+        Curso: Análise e Desenvolvimento de Software<br>
+        Professor: Anderson Kuntz Meurer
+        <p>Alunos: Davidy Paixão Anjos, Fabricio Furlan, Wolnei Engelmann<br>
+      </div>
+      <a href="https://portal.uniasselvi.com.br/graduacao">
+        <div class="container p-1 d-flex justify-content-center">
+          <img src="logo_unia.jpg" width="400" height="250"/>
+        </div>
+      </a>
+    </div>
+    <h1 class="text-decoration-underline text-center mt-2">Paper News!</h1>
+    <form method="POST" action="verifica.php">
+      <div class="mb-3">
+        <label for="titulo" class="form-label">Título</label>
+        <input type="text" class="form-control" id="titulo" name="titulo" maxlength="256" required>
+      </div>
+      <div class="mb-3">
+        <label for="corpo" class="form-label">Corpo</label>
+        <textarea class="form-control" id="corpo" name="corpo" rows="5" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="autor" class="form-label">Autor</label>
+        <input type="text" class="form-control" id="autor" name="autor" maxlength="256" required>
+      </div>
+      <div class="mb-3">
+        <label for="src" class="form-label">Link da imagem</label>
+        <input type="text" class="form-control" id="src" name="src" maxlength="256" required>
+      </div>
+      <div class="d-grid gap-2">
+        <button type="submit" class="btn btn-primary" name="enviar">Adicionar notícia</button>
+      </div>
+    </form>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-100   mx-auto" id="meu-container">
+          <div class="carrossel-footer mx-auto fixed-bottom">
+            <script>
+              criarCarrossel();
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+<!-- link para o arquivo JS do Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
